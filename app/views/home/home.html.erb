@@ -1,0 +1,61 @@
+<section class="about">
+  <div class="container">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
+</section>
+
+<section class="gallery blue-bg">
+  <div class="container"><%= image_tag("galloway1.jpg", class: "img-gall about-gall") %>
+
+    <h1>About me</h1>
+    <small>Born in Galloway</small>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.</p>
+
+    <%= link_to('More...', about_me_path) %>
+  </div>
+</section>
+
+<section class="learning yellow-bg">
+  <div class="container"><div class="box box-5"><figcaption><figure><i class="fa fa-diamond"></i><p class="lead">Ruby</p></figure></figcaption></div><div class="box box-5"><figcaption><figure><i class="fa fa-laptop"></i><p class="lead">Javascript</p></figure></figcaption></div>
+  <h1>Languages I'm learning</h1><small>Ruby, JavaScript, SQL...</small>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur.</p>
+  <%= link_to('More...', learning_path) %>
+  </div>
+</section>
+
+<section class="likes grey-bg">
+  <div class="container">
+  <%= image_tag('football.png') %>
+  <h1>Likes</h1><small>Football...</small>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur.</p>
+  <%= link_to('More...', likes_path) %>
+  </div>
+</section>
+
+<section class="contact green-bg">
+  <div class="container">
+    <p class="lead text-center">Get in touch! Lorem ipsum dolor sit amet.</p>
+    <div class="text-center">
+    <button class="prim"><i class="fa fa-paper-plane-o"></i>
+<%= link_to('Email me', contact_path) %></button>
+      
+    </div>
+  </div>
+</section>

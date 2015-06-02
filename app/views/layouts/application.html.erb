@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MySite</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class="<%= params[:action] %>">
+
+<header>
+  <div class="container">
+    <h1><%= link_to('Rick Henry', root_path) %></h1>
+    <small>WDI 13 student, London</small>
+  </div>
+</header>
+
+
+<%= yield %>
+
+</body>
+</html>
